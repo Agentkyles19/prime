@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700%3B900"
+         rel="stylesheet" />
+    <meta charset="utf-8" />
+    <title>Prime Energy</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body class="bg-[#181211]" style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
+    <div class="relative flex size-full min-h-screen flex-col dark group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <header
+                class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#382b29] bg-[#181211]/80 px-6 py-4 backdrop-blur-md md:px-10">
+                <div class="flex items-center gap-3 text-white">
+                    <svg class="h-8 w-8 text-[#e53b19]" fill="none" viewBox="0 0 48 48"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path clip-rule="evenodd"
+                            d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z"
+                            fill="currentColor" fill-rule="evenodd"></path>
+                    </svg>
+                    <h2 class="text-white text-2xl font-bold leading-tight tracking-[-0.015em]">PRIME</h2>
+                </div>
+                <nav class="hidden items-center gap-8 md:flex">
+                    <a class="text-white hover:text-[#e53b19] text-sm font-medium leading-normal transition-colors"
+                        href="#flavors">Flavors</a>
+                    <a class="text-white hover:text-[#e53b19] text-sm font-medium leading-normal transition-colors"
+                        href="#ingredients">Ingredients</a>
+                    <a class="text-white hover:text-[#e53b19] text-sm font-medium leading-normal transition-colors"
+                        href="#benefits">Benefits</a>
+                    <a class="text-white hover:text-[#e53b19] text-sm font-medium leading-normal transition-colors"
+                        href="#testimonials">Testimonials</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <button
+                        class="flex min-w-[100px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-5 bg-[#e53b19] text-white text-sm font-bold leading-normal tracking-[0.015em] transition-transform hover:scale-105">
+                        <span class="truncate">Shop Now</span>
+                    </button>
+                    <button class="md:hidden text-white">
+                        <span class="material-icons-outlined">menu</span>
+                    </button>
+                </div>
+            </header>
+            <main class="flex flex-1 flex-col">
+                <section
+                    class="relative h-[calc(100vh-80px)] min-h-[480px] flex items-center justify-center overflow-hidden">
+                    <div class="absolute inset-0 z-0">
+                        <img alt="Prime Energy Drink" class="h-full w-full object-cover object-center"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfQkfy2zJIi71ZaOO2c0Fk-oPpndt7Ifxypn6R-Fs0ffuKFJlDmjt_bLEUycyqFf2mk-au_mLcPQ4szKYLmKZUFA2IEb791m-Gwvb62yDRXAV5i16hfoWbGl2DXXhQr0NLyURYsNi4o4P97kBR_zF9HeL8GcpCO4HKKVOWDHVhQ6uTq43YX-ECcYXTobfucRmOz8u-4SJqVX2Dtn6OKITcXUCEB9L_emWfSvI3Qj5XLOGJNSc9SuSXhvT7NAYMzxl6JNeiwWRZ4us" />
+                        <div class="absolute inset-0 bg-black/60"></div>
+                    </div>
+                    <div class="relative z-10 flex flex-col items-center gap-6 p-4 text-center text-white md:gap-8">
+                        <h1 class="text-5xl font-black leading-tight tracking-tighter md:text-7xl">Fuel Your Potential
+                        </h1>
+                        <p class="max-w-2xl text-base font-normal leading-relaxed md:text-lg">
+                            Prime is the ultimate energy drink designed to elevate your performance and keep you
+                            energized throughout the day. Experience the power of Prime and unlock your full
+                            potential.
+                        </p>
+                        <button
+                            class="flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-[#e53b19] text-white text-base font-bold leading-normal tracking-[0.015em] transition-transform hover:scale-105 md:h-14 md:px-8 md:text-lg">
+                            <span class="truncate">Shop Now</span>
+                        </button>
+                    </div>
+                </section>
+                <section class="py-16 px-4 sm:px-6 lg:px-8 xl:px-20 2xl:px-40" id="flavors">
+                    <h2 class="text-center text-3xl font-bold leading-tight tracking-[-0.015em] text-white sm:text-4xl">
+                        Explore Our Flavors</h2>
+                    <div class="mt-12 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
+                        <div
+                            class="group relative flex flex-col gap-4 rounded-xl bg-[#261e1c] p-6 shadow-lg transition-all hover:shadow-2xl hover:scale-105">
+                            <div class="aspect-square w-full overflow-hidden rounded-lg">
+                                <img alt="Blue Raspberry Prime"
+                                    class="h-full w-full object-cover object-center transition-transform group-hover:scale-110"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-ZxAleJhQatv4KKCekwARqEgB21z6iaIGF1x6-zwcWHui3AMY1SdlkikmkUMeNFNZqhM89B7yR1zNDBchS5JUccvgWHVF_4Jk9Cwtw3OgD5h7qRrQ41KlGkMpCKMGtgGNxbSReGa3NfJNJiI-aG1qqC-YFnZn48YBg3t8LqCToDuL2SAAYZtWY-AevSCAPQb2cZ0BNhvvCtoSloQnUM0wHXKyYCMLAeJVyCZoB5VrVhkKnrR4PrQ1bDMgSGcFaYmtQRJig1J_iME" />
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-white">Blue Raspberry</h3>
+                                <p class="mt-1 text-sm text-[#b8a29d]">A refreshing blend of blue raspberry flavors.</p>
+                            </div>
+                        </div>
+                        <div
+                            class="group relative flex flex-col gap-4 rounded-xl bg-[#261e1c] p-6 shadow-lg transition-all hover:shadow-2xl hover:scale-105">
+                            <div class="aspect-square w-full overflow-hidden rounded-lg">
+                                <img alt="Tropical Punch Prime"
+                                    class="h-full w-full object-cover object-center transition-transform group-hover:scale-110"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7dyCDxVpPklSTPOcsMpfD_EnXErYYH4JCYmZJcaw_KxnwFyIcy7G00RS7Mlb8pTUd-3FI7q_fpRZO7XvmTByAMW84bpMxIn1vXiQ8LyaFHJU7B_JFf_C-N_iNUfz4NsSvCryjS-OW_IJCgBgGVg5PPeVvD1QVTnpHtbVjxPCfmzV6gMQjSjpFvYYnTQWV0D_mkwtFzlLz-oMobgYyJFcx4SvocSUJ3BU6eylGF-Htw-xTdGV12FLSZwSi5qQ5LooMzbN5AAJxq08" />
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-white">Tropical Punch</h3>
+                                <p class="mt-1 text-sm text-[#b8a29d]">A tropical explosion of fruity goodness.</p>
+                            </div>
+                        </div>
+                        <div
+                            class="group relative flex flex-col gap-4 rounded-xl bg-[#261e1c] p-6 shadow-lg transition-all hover:shadow-2xl hover:scale-105">
+                            <div class="aspect-square w-full overflow-hidden rounded-lg">
+                                <img alt="Lemon Lime Prime"
+                                    class="h-full w-full object-cover object-center transition-transform group-hover:scale-110"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuByI_Y9SNsWyQ-4CxFbWMQBA6BItfr1CPV6_-1R7pGBpmTVc5vdF0PqSSPFMPM_zK4akacwEqg29WoWg_GaJN8r26fDF_mtK_pRZgm1o7T7oaQHkwUi82gLJcN-1by3rkhLglx6UMQ0wD37VagDga7rA9ZASUi91nmct5fB0HWuekwD5lJNW9LbmePD71n1SgBzlNcjtwFoc2bw-7VtK4NGcbOJotAk3fVL1F5FBToXViynONa7-8z9INm9Rt-NPMwVh_xQ2lc0fmA" />
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-white">Lemon Lime</h3>
+                                <p class="mt-1 text-sm text-[#b8a29d]">A zesty and invigorating citrus experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="py-16 px-4 sm:px-6 lg:px-8 xl:px-20 2xl:px-40 bg-[#261e1c]" id="ingredients">
+                    <div class="mx-auto max-w-3xl text-center">
+                        <h2 class="text-3xl font-bold leading-tight tracking-[-0.015em] text-white sm:text-4xl">Key
+                            Ingredients</h2>
+                        <p class="mt-4 text-lg text-[#b8a29d]">
+                            Prime is crafted with natural ingredients to provide a sustained energy boost without the
+                            crash. Our unique blend of electrolytes, vitamins, and antioxidants keeps
+                            you going strong.
+                        </p>
+                    </div>
+                    <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
+                        <div
+                            class="flex flex-col items-center gap-4 rounded-xl border border-[#53403c] bg-[#181211] p-6 text-center">
+                            <span class="material-icons-outlined text-4xl text-[#e53b19]">local_drink</span>
+                            <h3 class="text-xl font-bold text-white">Electrolytes</h3>
+                            <p class="text-sm text-[#b8a29d]">Replenish essential minerals lost during activity.</p>
+                        </div>
+                        <div
+                            class="flex flex-col items-center gap-4 rounded-xl border border-[#53403c] bg-[#181211] p-6 text-center">
+                            <span class="material-icons-outlined text-4xl text-[#e53b19]">science</span>
+                            <h3 class="text-xl font-bold text-white">Vitamins</h3>
+                            <p class="text-sm text-[#b8a29d]">Support overall health and well-being.</p>
+                        </div>
+                        <div
+                            class="flex flex-col items-center gap-4 rounded-xl border border-[#53403c] bg-[#181211] p-6 text-center">
+                            <span class="material-icons-outlined text-4xl text-[#e53b19]">spa</span>
+                            <h3 class="text-xl font-bold text-white">Antioxidants</h3>
+                            <p class="text-sm text-[#b8a29d]">Protect your body from oxidative stress.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="py-16 px-4 sm:px-6 lg:px-8 xl:px-20 2xl:px-40" id="benefits">
+                    <div class="mx-auto max-w-3xl text-center">
+                        <h2 class="text-3xl font-bold leading-tight tracking-[-0.015em] text-white sm:text-4xl">
+                            Experience the Benefits</h2>
+                        <p class="mt-4 text-lg text-[#b8a29d]">
+                            Prime is your go-to energy drink for any activity. Whether you're hitting the gym, working
+                            on a project, or just need a pick-me-up, Prime delivers the energy you
+                            need to excel.
+                        </p>
+                    </div>
+                    <div class="mt-12 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
+                        <div class="group relative flex flex-col overflow-hidden rounded-xl bg-[#261e1c] shadow-lg">
+                            <div class="aspect-video w-full">
+                                <img alt="Enhanced Focus"
+                                    class="h-full w-full object-cover object-center transition-transform group-hover:scale-105"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbaml8RDF7zJovHMuNfVaLJV9O3EYioN2gQnEqQaw3OjrJSHMKY7ruWM9Z7NIqDAEXoPDAQ0DytoID2rKuXm4QMXa0ei1Rrqz2zkA-rRk2GvKkWwBlHaem1MZzYveg6Dh-PoP6YoJHg1RBNAfdrI-ZCDu0809iCbdy_7A0fIkrBzguRWVeNR17SVBAu5xC1jN05xqfDORBW021b7XZw_oUODovYwbuPFmaeO1y8hkHAhg_4nOVwFBk-VhOkC0EUSA7LHzXrMxdZAE" />
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-semibold text-white">Enhanced Focus</h3>
+                                <p class="mt-1 text-sm text-[#b8a29d]">Stay sharp and focused on your tasks.</p>
+                            </div>
+                        </div>
+                        <div class="group relative flex flex-col overflow-hidden rounded-xl bg-[#261e1c] shadow-lg">
+                            <div class="aspect-video w-full">
+                                <img alt="Sustained Energy"
+                                    class="h-full w-full object-cover object-center transition-transform group-hover:scale-105"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7eAn2L_Gh6vmG-2lUmsGlQfHkmmA7NU9A-mMtGTVU_FFCXK4e3vIF8-S3tWjQx2a4cDYsgyHNw2a4N8DMBmakutY_IQaWa76JDgUY7ZO4s_-wtBFG6NQWofY37sDFwzcBH0lO_eTK2lk-RU_ArLWJyeZfhynWf0Degr6hSupuE3Ko7Snk1JLRr46rxwkvcE5kj0Aj8SSHuithkLQOKr8xoqxoVikynjrGkcCxiFoLty1qso_g1x5anLSoVyKro1mn1-iPReGumhA" />
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-semibold text-white">Sustained Energy</h3>
+                                <p class="mt-1 text-sm text-[#b8a29d]">Power through your day without the crash.</p>
+                            </div>
+                        </div>
+                        <div class="group relative flex flex-col overflow-hidden rounded-xl bg-[#261e1c] shadow-lg">
+                            <div class="aspect-video w-full">
+                                <img alt="Improved Hydration"
+                                    class="h-full w-full object-cover object-center transition-transform group-hover:scale-105"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiKzjv372iOdQ2ABk1_bnxT_lGH7b9D4AEPJ2DJr68kPwdFMU32iWe4jc64FdKiI38q5B7MBV6KQF_8fQo9kBbmWWht077UShUJTqXd6N69ARSPD8ye3n_TX-C4avyy9ZZDv8nX53u8Rkm-IYcAG0uKzY_qOakCLM590HBR1jMHm5zjzjLB9_QhLc_aILbnsl3BzK_2VUCyl2nYR3j6yCr8pgGtslsfP-Y8_g6iaFL5QFAM_Mzfs473MrfIB2PfAhHTHWG1NFAFF0" />
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-semibold text-white">Improved Hydration</h3>
+                                <p class="mt-1 text-sm text-[#b8a29d]">Keep your body properly hydrated.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="py-16 px-4 sm:px-6 lg:px-8 xl:px-20 2xl:px-40 bg-[#261e1c]" id="testimonials">
+                    <h2 class="text-center text-3xl font-bold leading-tight tracking-[-0.015em] text-white sm:text-4xl">
+                        What Our Customers Say</h2>
+                    <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+                        <div class="flex flex-col gap-4 rounded-xl border border-[#53403c] bg-[#181211] p-6">
+                            <div class="flex items-center gap-3">
+                                <img alt="Sophia Carter" class="h-12 w-12 rounded-full object-cover"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIx2rSP_M-qNV1BfFQDJsJEV75j5A9ZedJehPhFzt9exTprCr9cL9pbqoDLqacpycf5ZRnOceQt2vUHlhdHR5CPWAkQwAKxz4toZ6_XtgXorKBr1N3qmzWKZIgIUC6n-NL7080L9aLH8SHTePvPfaOBaBsyV77T3uwWD16S-NPaPEPOwCiquDD3SaX5Ud7aXJE5wL4MP7EyvoEb9KwSeL6gNMY8dsltiaK-ROvqZ8U4-puuUnL6kgWD0gwW7O4uY-FG2xs2c2NWPY" />
+                                <div>
+                                    <p class="text-base font-medium text-white">Sophia Carter</p>
+                                    <p class="text-xs text-[#b8a29d]">May 15, 2024</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-0.5 text-[#e53b19]">
+                                <span class="material-icons text-lg">star</span>
+                                <span class="material-icons text-lg">star</span>
+                                <span class="material-icons text-lg">star</span>
+                                <span class="material-icons text-lg">star</span>
+                                <span class="material-icons text-lg">star</span>
+                            </div>
+                            <p class="text-sm text-white">
+                                "Prime has completely changed my workout routine. I feel more energized and focused, and
+                                I can push myself harder than ever before. The flavors are amazing too!"
+                            </p>
+                            <div class="mt-auto flex gap-4 text-[#b8a29d]">
+                                <button class="flex items-center gap-1 text-xs hover:text-white transition-colors">
+                                    <span class="material-icons-outlined text-base">thumb_up</span> 25
+                                </button>
+                                <button class="flex items-center gap-1 text-xs hover:text-white transition-colors">
+                                    <span class="material-icons-outlined text-base">thumb_down</span> 2
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-4 rounded-xl border border-[#53403c] bg-[#181211] p-6">
+                            <div class="flex items-center gap-3">
+                                <img alt="Ethan Bennett" class="h-12 w-12 rounded-full object-cover"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOSXj8x7y9mWv-C7IJeiwvgvtARsriZ3Lh9Fg4i7L9Okr5YXMGX4Pv9o0FJjAZpxIFpyqiwbwl28k22cLlLfkjLHKB2lS2EaDsI9-Bve7J25Ug9hllauOJRAx9P03d9OjRuyOPtmgUDVVgzuJc8JnhIaMPA47AM1qpn_Ws6FWA6WOxHwTYi4N7lpTj-xr41N46pFGodzSy57cPo8gLoOkEi6tZZ2TsyfJyt7hBwKoD7HEbvxBPlYLvNigSByR4ZUNIjOOy0Web7K0" />
+                                <div>
+                                    <p class="text-base font-medium text-white">Ethan Bennett</p>
+                                    <p class="text-xs text-[#b8a29d]">April 22, 2024</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-0.5 text-[#e53b19]">
+                                <span class="material-icons text-lg">star</span>
+                                <span class="material-icons text-lg">star</span>
+                                <span class="material-icons text-lg">star</span>
+                                <span class="material-icons text-lg">star</span>
+                                <span class="material-icons-outlined text-lg text-[#765b56]">star_border</span>
+                            </div>
+                            <p class="text-sm text-white">
+                                "I love the natural ingredients in Prime. It gives me a clean energy boost without the
+                                jitters or crash. It's my go-to drink for long workdays."
+                            </p>
+                            <div class="mt-auto flex gap-4 text-[#b8a29d]">
+                                <button class="flex items-center gap-1 text-xs hover:text-white transition-colors">
+                                    <span class="material-icons-outlined text-base">thumb_up</span> 18
+                                </button>
+                                <button class="flex items-center gap-1 text-xs hover:text-white transition-colors">
+                                    <span class="material-icons-outlined text-base">thumb_down</span> 1
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-4 rounded-xl border border-[#53403c] bg-[#181211] p-6">
+                            <div class="flex items-center gap-3">
+                                <img alt="Olivia Hayes" class="h-12 w-12 rounded-full object-cover"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB72NdaElqgVhEbjXTMd3qlMvu_Qtwu3K4U6JJ_O0usO78AL3lwcrKnrK-abDIJPnsTJyq59JBkfc-qTBKhNfwaAKm8FCCCuq-33boswTktRUgAE7WL5dzJxBAjSkrJjiW8vgewmoy74ESEcPUGwASzo2XsYeW5VQvkM37TlvyrKOO1XlJFTPq_2mYMEQcrzjf5gsXmYlwTMArIGh-lQO2_BsqxpGgPsjiBYRJfTNZ73pIumT3redqt90UIrw-XepX3VkmpsABUybk" />
+                                <div>
+                                    <p class="text-base font-medium text-white">Olivia Hayes</p>
+                                    <p class="text-xs text-[#b8a29d]">March 10, 2024</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-0.5 text-[#e53b19]">
+                                <span class="material-icons text-lg">star</span>
+                                <span class="material-icons text-lg">star</span>
+                                <span class="material-icons text-lg">star</span>
+                                <span class="material-icons text-lg">star</span>
+                                <span class="material-icons text-lg">star</span>
+                            </div>
+                            <p class="text-sm text-white">
+                                "Prime is the perfect pick-me-up for my busy lifestyle. It keeps me going without the
+                                artificial stuff. Plus, the taste is fantastic!"
+                            </p>
+                            <div class="mt-auto flex gap-4 text-[#b8a29d]">
+                                <button class="flex items-center gap-1 text-xs hover:text-white transition-colors">
+                                    <span class="material-icons-outlined text-base">thumb_up</span> 30
+                                </button>
+                                <button class="flex items-center gap-1 text-xs hover:text-white transition-colors">
+                                    <span class="material-icons-outlined text-base">thumb_down</span> 3
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="border-t border-solid border-t-[#382b29] bg-[#181211]">
+                <div class="mx-auto max-w-7xl px-6 py-12 lg:px-8">
+                    <nav aria-label="Footer" class="flex flex-wrap justify-center gap-x-6 gap-y-4">
+                        <a class="text-sm leading-6 text-[#b8a29d] hover:text-white transition-colors" href="#">Contact
+                            Us</a>
+                        <a class="text-sm leading-6 text-[#b8a29d] hover:text-white transition-colors" href="#">Privacy
+                            Policy</a>
+                        <a class="text-sm leading-6 text-[#b8a29d] hover:text-white transition-colors" href="#">Terms of
+                            Service</a>
+                    </nav>
+                    <div class="mt-10 flex justify-center space-x-6">
+                        <a class="text-[#b8a29d] hover:text-white transition-colors" href="#">
+                            <span class="sr-only">Twitter</span>
+                            <svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84">
+                                </path>
+                            </svg>
+                        </a>
+                        <a class="text-[#b8a29d] hover:text-white transition-colors" href="#">
+                            <span class="sr-only">Instagram</span>
+                            <svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path clip-rule="evenodd"
+                                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.023.047 1.351.058 3.807.058h.468c2.456 0 2.784-.011 3.807-.058.975-.045 1.504-.207 1.857-.344.467-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.047-1.023.058-1.351.058-3.807v-.468c0-2.456-.011-2.784-.058-3.807-.045-.975-.207-1.504-.344-1.857-.182-.467-.399-.8-.748-1.15-.35-.35-.683-.566-1.15-.748-.353-.137-.882-.3-1.857-.344C14.734 3.813 14.379 3.802 12 3.802z"
+                                    fill-rule="evenodd"></path>
+                                <path
+                                    d="M12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.206a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a class="text-[#b8a29d] hover:text-white transition-colors" href="#">
+                            <span class="sr-only">Facebook</span>
+                            <svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path clip-rule="evenodd"
+                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                    fill-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="mt-10 text-center text-xs leading-5 text-[#b8a29d]" id="copyright"></p>
+                    <script>
+                        document.getElementById('copyright').textContent = `© ${new Date().getFullYear()} Prime. All rights reserved.`;
+                    </script>
+            </footer>
+        </div>
+    </div>
+
+</body>
+
+</html>
